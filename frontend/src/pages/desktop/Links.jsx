@@ -67,9 +67,9 @@ const Links = () => {
     setValue("username", user?.username || "there");
     setValue("bio", user?.bio || "");
     if (user?.image) {
-      setPreviewImage(`https://sparks-tkc0.onrender.com/${user.image}`);
+      setPreviewImage(`https://sparks-tkc0.onrender.com${user.image}`);
     } else {
-      setPreviewImage("/uploads/pfp.svg"); // Default profile image
+      setPreviewImage("https://sparks-tkc0.onrender.com/uploads/pfp.svg"); // Default profile image
     }
   }, [user, setValue]);
 
@@ -156,7 +156,7 @@ const Links = () => {
 
   const handleRemoveImage = () => {
     setSelectedFile(null); // Clear the selected file
-    setPreviewImage("https://sparks-tkc0.onrender.com//uploads/pfp.svg"); // Reset preview to default image
+    setPreviewImage("https://sparks-tkc0.onrender.com/uploads/pfp.svg"); // Reset preview to default image
     setImageRemoved(true);
     CustomToast.success("Image removed successfully"); // Show a toast notification
 
@@ -169,7 +169,7 @@ const Links = () => {
         if (selectedFile) {
             await imageUpload(selectedFile); // Upload new image
         } else if (imageRemoved) {
-            data.image = "https://sparks-tkc0.onrender.com//uploads/pfp.svg"; // Explicitly tell backend to remove image
+            data.image = "https://sparks-tkc0.onrender.com/uploads/pfp.svg"; // Explicitly tell backend to remove image
         }
 
         await saveProfile(data, localLinks, localShops); // Save other profile data
