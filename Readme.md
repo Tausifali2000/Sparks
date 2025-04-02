@@ -1,0 +1,5 @@
+The objective of this project is to develop a Linktree-inspired web application with a responsive design and real-time updates for frontend users.
+
+This project was built using the MERN stack and followed a structured development approach: Designed the project architecture by creating a rough data flow and UI wireframe. Developed and tested backend APIs using Postman. Built the frontend with a focus on design and responsiveness. Implemented global state management using Zustand and integrated APIs with Axios. Performed final testing and refinements to ensure a seamless user experience. Deployed the application and conducted post-deployment testing.
+
+Authentication with JWT for secure user access. Real-time preview for immediate updates. Loading states to enhance user experience. Fully responsive design across devices. Account management with editable user details. Global state management using Zustand.
