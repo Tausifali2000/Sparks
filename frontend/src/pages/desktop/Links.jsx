@@ -218,7 +218,7 @@ const Links = () => {
       </button>
       <div className={`${styles.preview} ${isPreviewVisible ? styles.show : styles.hide}`}>
 
-        <PreviewLinks links={localLinks} shopLinks={localShops} image={previewImage} background={color} />
+        <PreviewLinks username = {username} links={localLinks} shopLinks={localShops} image={previewImage} background={color} />
         <div className={isPreviewVisible ? styles.show : styles.hide}>
           <button className={styles.close} onClick={handleCloseClick}>
             X

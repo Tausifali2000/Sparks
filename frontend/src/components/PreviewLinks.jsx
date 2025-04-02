@@ -11,12 +11,12 @@ import Stack from "./layout/Stack";
 import MuiToggleButton from "./ToggleButton"
 
 
-const PreviewLinks = ({ links, shopLinks, image, background}) => {
+const PreviewLinks = ({ username, links, shopLinks, image, background}) => {
 
   const{ font, layout, theme,  isLoading} = useAppearanceStore();
   const {user} = useAuthStore()
    
-  const username = user?.username
+
   const bg = background
 
 
