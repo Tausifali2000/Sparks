@@ -11,7 +11,7 @@ const Sidebar = () => {
    const { selectedOption, setSelectedOption } = useSidebarStore();
    const { user, logout } = useAuthStore();
   
-  const pfp = `http://localhost:5000${user.image}`
+  const pfp = `https://sparks-tkc0.onrender.com/${user.image}`
 
    const [anchorEl, setAnchorEl] = useState(null);
    
